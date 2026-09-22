@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kali-linux-lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0e0d;
+    --bg-raised:#0f1513;
+    --border:#1c2622;
+    --text:#dce8e4;
+    --text-dim:#7a8b86;
+    --accent:#5eead4;
+    --accent-dim:#5eead422;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  code, .mono{font-family:'JetBrains Mono',monospace;}
+
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  header{
+    border-bottom:1px solid var(--border);
+    padding:64px 0 48px;
+  }
+  .prompt{
+    font-family:'JetBrains Mono',monospace;
+    color:var(--accent);
+    font-size:14px;
+    margin-bottom:18px;
+  }
+  .prompt::before{content:"┌──(";color:var(--text-dim);}
+  .prompt::after{content:")";color:var(--text-dim);}
+  h1{
+    font-size:34px;
+    font-weight:600;
+    letter-spacing:-0.02em;
+    margin-bottom:14px;
+  }
+  header p{
+    color:var(--text-dim);
+    font-size:16px;
+    max-width:52ch;
+  }
+
+  main{padding:48px 0 80px;}
+
+  .section-title{
+    font-family:'JetBrains Mono',monospace;
+    color:var(--text-dim);
+    font-size:13px;
+    margin-bottom:18px;
+  }
+  .section-title::before{content:"$ ";color:var(--accent);}
+
+  .entries{
+    list-style:none;
+    border:1px solid var(--border);
+    border-radius:6px;
+    overflow:hidden;
+  }
+  .entries li{border-bottom:1px solid var(--border);}
+  .entries li:last-child{border-bottom:none;}
+  .entries a{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:16px;
+    padding:18px 20px;
+    text-decoration:none;
+    color:var(--text);
+    transition:background 0.15s ease;
+  }
+  .entries a:hover{background:var(--bg-raised);}
+  .entries a:hover .entry-title{color:var(--accent);}
+  .entry-title{font-weight:500;transition:color 0.15s ease;}
+  .entry-meta{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:var(--text-dim);
+    white-space:nowrap;
+  }
+
+  footer{
+    border-top:1px solid var(--border);
+    padding:28px 0;
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:var(--text-dim);
+  }
+  footer a{color:var(--accent);text-decoration:none;}
+
+  @media (prefers-color-scheme: light){
+    /* Este sitio mantiene siempre estética oscura tipo terminal */
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="prompt">juanpablo@lab</div>
+      <h1>kali-linux-lab</h1>
+      <p>Registro técnico de práctica con Kali Linux en un entorno virtualizado con VirtualBox: comandos, configuración y ejercicios documentados a medida que se resuelven.</p>
+    </header>
+
+    <main>
+      <div class="section-title">entradas</div>
+      <ul class="entries">
+        <li>
+          <a href="entradas/01-comandos-basicos.html">
+            <span class="entry-title">Comandos básicos de Linux</span>
+            <span class="entry-meta">01</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <a href="https://github.com/juanpablocode-sudo/kali-linux-lab">github.com/juanpablocode-sudo/kali-linux-lab</a>
+    </footer>
+  </div>
+</body>
+</html>
