@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comandos básicos de Linux — kali-linux-lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0e0d;
+    --bg-raised:#0f1513;
+    --border:#1c2622;
+    --text:#dce8e4;
+    --text-dim:#7a8b86;
+    --accent:#5eead4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  code, .mono{font-family:'JetBrains Mono',monospace;}
+
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px;}
+
+  nav{padding:32px 0 0;}
+  nav a{
+    font-family:'JetBrains Mono',monospace;
+    font-size:13px;
+    color:var(--text-dim);
+    text-decoration:none;
+  }
+  nav a:hover{color:var(--accent);}
+
+  header{padding:24px 0 40px;border-bottom:1px solid var(--border);}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:13px;
+    color:var(--accent);
+    margin-bottom:12px;
+  }
+  h1{font-size:28px;font-weight:600;letter-spacing:-0.01em;}
+
+  main{padding:40px 0 80px;}
+  main p{color:var(--text-dim);margin-bottom:28px;max-width:60ch;}
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid var(--border);
+    border-radius:6px;
+    overflow:hidden;
+  }
+  thead th{
+    text-align:left;
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    font-weight:500;
+    color:var(--text-dim);
+    padding:12px 16px;
+    background:var(--bg-raised);
+    border-bottom:1px solid var(--border);
+  }
+  tbody td{
+    padding:14px 16px;
+    border-bottom:1px solid var(--border);
+    font-size:14px;
+  }
+  tbody tr:last-child td{border-bottom:none;}
+  td.cmd{
+    font-family:'JetBrains Mono',monospace;
+    color:var(--accent);
+    white-space:nowrap;
+    width:1%;
+  }
+  td.desc{color:var(--text);}
+
+  footer{
+    border-top:1px solid var(--border);
+    padding:28px 0;
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:var(--text-dim);
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <nav><a href="../index.html">&larr; kali-linux-lab</a></nav>
+
+    <header>
+      <div class="eyebrow">01</div>
+      <h1>Comandos básicos de Linux</h1>
+    </header>
+
+    <main>
+      <p>Primeros comandos de navegación y manejo de archivos practicados en la terminal, base para todo lo que sigue.</p>
+
+      <table>
+        <thead>
+          <tr><th>Comando</th><th>Qué hace</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="cmd">pwd</td><td class="desc">Muestra el directorio actual</td></tr>
+          <tr><td class="cmd">ls</td><td class="desc">Lista archivos y carpetas</td></tr>
+          <tr><td class="cmd">cd</td><td class="desc">Cambia de directorio</td></tr>
+          <tr><td class="cmd">cd ..</td><td class="desc">Sube un nivel en el árbol de directorios</td></tr>
+          <tr><td class="cmd">mkdir</td><td class="desc">Crea una carpeta</td></tr>
+          <tr><td class="cmd">touch</td><td class="desc">Crea un archivo vacío</td></tr>
+          <tr><td class="cmd">cat</td><td class="desc">Muestra el contenido de un archivo</td></tr>
+          <tr><td class="cmd">nano</td><td class="desc">Edita un archivo desde la terminal</td></tr>
+          <tr><td class="cmd">cp</td><td class="desc">Copia archivos o carpetas</td></tr>
+          <tr><td class="cmd">mv</td><td class="desc">Mueve o renombra archivos</td></tr>
+          <tr><td class="cmd">rm</td><td class="desc">Elimina archivos</td></tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>kali-linux-lab</footer>
+  </div>
+</body>
+</html>
